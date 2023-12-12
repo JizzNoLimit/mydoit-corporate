@@ -219,22 +219,22 @@ body {
 
     /* Company Partner */
     .hero__company_partner {
-        background-color: #FAF8F8;
-        border-radius: 50px;
+        background-color: #005433;
+        border-radius: 0 0 50px 50px;
     }
     .company_partner {
         max-width: 1000px;
         width: 100%;
         height: auto;
         margin: 0 auto;
-        padding: 60px 0 50px 0;
+        padding: 60px 0 67px 0;
         text-align: center;
     }
     .small__title {
         display: block;
         font-size: 24px;
         font-weight: 600;
-        color: #252525;
+        color: #fff;
         margin-bottom: 60px;
     }
     .company_partner__container {
@@ -315,22 +315,26 @@ body {
         line-height: 160%; /* 32px */
         letter-spacing: 0.8px;
     }
-    .keuntungan__list span {
-        display: block;
-        padding: 8px;
-        
-    }
     .keuntungan__list ul li {
         display: flex;
         align-items: center;
         gap: 24px;
         margin-top: 12px;
     }
-    .keuntungan__icon {
-        padding: 8px;
+    .keuntungan__list span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
         background-color: #FA8100;
         border-radius: 50%;
     }
+    /* .keuntungan__icon {
+        padding: 8px;
+        background-color: #FA8100;
+        border-radius: 50%;
+    } */
     .keuntungan__image {
         position: absolute;
         bottom: -84px;
@@ -455,18 +459,20 @@ body {
     }
     .banner_mydoit_mobile__texture {
         position: absolute;
-        width: 100%;
+        width: 120%;
         object-fit: cover;
         object-position: center;
         z-index: 0;
     }
     .banner_mydoit_mobile__container {
+        position: relative;
         display: flex;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
         padding: 74px 0;
         gap: 58px;
+        z-index: 1;
     }
     .banner_mydoit_mobile__question {
         margin-bottom: 70px;
@@ -503,12 +509,14 @@ body {
         padding: 84px 0;
     }
     .pengguna__mydoit__container {
+        position: relative;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
+        /* padding: 0 120px; */
     }
     .pengguna__mydoit__judul {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
         text-align: center;
         font-size: 32px;
         font-style: normal;
@@ -517,7 +525,394 @@ body {
         letter-spacing: 1.28px;
         color: #252525;
     }
+    .pengguna__mydoit__container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .swiper.swiper_pengguna {
+        position: static;
+        width: 740px;
+        margin: 0 auto;
+    }
+    .swiper-wrapper.swiper_pengguna__wrapper {
+        display: flex;
+        align-items: center;
+        height: 364px !important;
+    }
+    .swiper-wrapper.swiper_pengguna__wrapper .swiper-slide {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+    .swiper-wrapper.swiper_pengguna__wrapper .swiper-slide span {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -40px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 500;
+        color: #606060;
+        transition: all 0.3s ease; /* Efek transisi */
+    }
+    .slide__pengguna {
+        width: 180px !important;
+        height: 180px !important;
+        text-align: center;
+        background-color: #007E4C;
+        border-radius: 50%;
+        transition: transform 0.3s ease; /* Efek transisi */
+        overflow: hidden;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+    }
+    .swiper-wrapper.swiper_pengguna__wrapper 
+    .swiper-slide.swiper-slide-active
+    .slide__pengguna {
+        border: 1.8px solid #32DB98;
+        box-shadow: 0px 5px 20px 0px rgba(0, 168, 102, 0.50);
+    }
+    .swiper-wrapper.swiper_pengguna__wrapper 
+    .swiper-slide.swiper-slide-active
+    span {
+        bottom: -96px;
+        font-size: 28px;
+        font-weight: 700;
+        color: #252525;
+    }
+    .swiper-slide.swiper-slide-active .slide__pengguna {
+        transform: scale(1.5);
+    }
+    .swiper_pengguna_button_prev, 
+    .swiper_pengguna_button_next {
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: #64E4B1;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+    .swiper_pengguna_button_prev {
+        left: 0;
+    }
+    .swiper_pengguna_button_next {
+        right: 0;
+    }
+    .swiper_pengguna__content {
+        width: 740px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+    }
+    .swiper_pengguna__content p {
+        margin-top: 14px;
+    }
+    .swiper_pengguna_pagination {
+        text-align: center;
+    }
+    .swiper_pengguna_pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: #00D27F;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .swiper_pengguna_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        width: 24px;
+        border-radius: 12px;
+    }
     /* Akhir Pengguna MyDoit Corporate */
+
+    /* CTA */
+    .cta_home {
+        width: 100%;
+        height: auto;
+        padding: 84px 0;
+    }
+    .cta_home__container {
+        display: flex;
+        align-items: end;
+        gap: 85px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cta_home__content {
+        padding-bottom: 27px;
+    }
+    .cta_home__content h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%; /* 38.4px */
+        letter-spacing: 0.96px;
+        color: #252525;
+    }
+    .cta_home p {
+        margin-bottom: 54px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+    }
+    .cta_home button { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 380px;
+        padding: 18px 0;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.64px;
+        border-radius: 15px;
+        color: white;
+        background-color: #00D27F;
+    }
+    /* Akhir CTA */
+
+    /* Baca Artikel */
+    .baca_artikel {
+        width: 100%;
+        height: auto;
+        padding: 45px 0;
+    }
+    .baca_artikel__container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+        border-top: 1px solid #C7C7C7;
+    }
+    .baca_artikel__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .baca_artikel__header h3 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #252525;
+    }
+    .baca_artikel__header button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 24px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        color: white;
+        background-color: #00D27F;
+    }
+    .artikel__container {
+        display: flex;
+        gap: 20px;
+    }
+    .artikel__card {
+        display: grid;
+        grid-template-columns: 235px auto ;
+        gap: 14px;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+    }
+    .artikel__image_box {
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .artikel__tags {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 19.5px */
+        border-radius: 12px;
+        color: white;
+        background-color: #FA8100;
+    }
+    .artikel__judul {
+        margin-bottom: 10px;
+        font-size: 16px; 
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: black;
+    }
+    .artikel__isi {
+        margin-bottom: 45px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #606060;
+    }
+    .artikel__link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 25.5px */
+        text-decoration-line: underline;
+        color: #00D27F;
+    }
+    /* Akhir Baca Artikel */
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        height: 100%;
+        padding: 80px 0;
+        color: white;
+        background-color: #007E4C;
+    }
+    .footer hr {
+        height: 0.5px;
+    }
+    .footer__container {
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .footer__newsletter {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        margin-bottom: 60px;
+    }
+    .footer__newsletter h3 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    .footer__newsletter p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+    }
+    .footer__form {
+        display: flex;
+        gap: 12px;
+        padding: 6px 6px 6px 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .footer__form img {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .footer__newsletter_input {
+        position: relative;
+        flex: 70%;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0;
+        border: none;
+        color: #252525;
+    }
+    .footer__newsletter_input::placeholder {
+        color: #B7B6B6;
+    }
+    .footer__newsletter_input:focus {
+        outline: none;
+    }
+    .footer__newsletter_submit {
+        flex: 30%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 8px;
+        color: white;
+        background-color: #00D27F;
+    }
+    .footer__main {
+        display: flex;
+        justify-content: space-between;
+        gap: 67px;
+        margin-top: 40px;
+    }
+    .footer__main p {
+        margin-top: 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+        text-transform: capitalize;
+    }
+    .footer__main h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .footer__main ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    .footer__main ul li {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .footer__social_media {
+        display: flex;
+        gap: 12px;
+        margin-top: 40px;
+    }
+    .footer__copyright {
+        margin-top: 70px;
+        text-align: center;
+        /* font-family: Poppins; */
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 18px */
+    }
+    .footer__copyright a {
+        color: white;
+    }
+    /* Akhir Footer */
 }
 
 /* Style Desktop */
