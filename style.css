@@ -749,7 +749,7 @@ body {
     .artikel__tags {
         display: inline-block;
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 5px 10px;
         font-size: 13px;
         font-style: normal;
         font-weight: 500;
@@ -786,6 +786,74 @@ body {
         color: #00D27F;
     }
     /* Akhir Baca Artikel */
+
+    /* Q&A */
+    .qna {
+        width: 100%;
+        height: auto;
+        padding: 84px;
+    }
+    .qna__container {
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .qna h1 {
+        margin-bottom: 80px;
+        text-align: center;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 64px */
+        letter-spacing: 1.6px;
+        color: #252525;
+    }
+    .qna p {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+        color: #606060;
+    }
+    .qna__box {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.64px;
+    border-radius: 10px;
+    color: #252525;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    margin-top: 12px;
+    text-align: left;
+    padding: 20px 40px;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+    /* Akhir Q&A */
 
     /* Footer */
     .footer {
