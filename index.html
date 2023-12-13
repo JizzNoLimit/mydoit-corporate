@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar__container">
@@ -40,71 +39,84 @@
                 <li><a href="#">About Us</a></li>
             </ul>
             <button class="navbar__contact">Hubungi Kami</button>
+            <div class="navbar__menu__mobile">
+                menu
+            </div>
         </div>
     </nav>
     <!-- Akhir Navbar -->
 
-    <div class="hero__company_partner">
-        <!-- Hero -->
-        <div class="hero">
-            <img 
-                src="./assets/img/hero-background.png" 
-                class="hero__background"
-                alt=""
-            >
-            <div class="hero__container">
-                <div>
-                    <h1 class="hero__title">Optimalkan pengelolaan keuangan bisnismu bersama <span>Mydoit Corporate</span></h1>
-                    <p class="hero__deskription">Bergabung bersama kami dan kami siap membantu mengelola keuangan bisnismu dengan baik</p>
-                    <div class="hero__wrapper_button">
-                        <button class="btn__get_started">Mulai sekarang</button>
-                        <button class="btn__consultacion">
-                            <img src="./assets/icon/whatsapp.svg" alt="">
-                            Konsultasi
-                        </button>
-                    </div>
-                    <div class="hero__our_client">
-                        <img src="./assets/img/testimonial-client.png" alt="">
-                        <span>100+ Klien puas dengan service kami</span>
-                    </div>
+    <!-- Hero -->
+    <div class="hero">
+        <img 
+            src="./assets/img/hero-background.png" 
+            class="hero__background"
+            alt=""
+        >
+        <div class="hero__container">
+            <div>
+                <h1 class="hero__title">Optimalkan<br>pengelolaan keuangan<br>bisnismu bersama <br><span>Mydoit Corporate</span></h1>
+                <p class="hero__deskription">Bergabung bersama kami dan kami siap membantu mengelola keuangan bisnismu dengan baik</p>
+                <div class="hero__wrapper_button">
+                    <button class="btn__get_started">Mulai sekarang</button>
+                    <button class="btn__consultacion">
+                        <img src="./assets/icon/whatsapp.svg" alt="">
+                        Konsultasi
+                    </button>
                 </div>
-                <div>
-                    <img 
-                        src="./assets/img/hero-image.png" 
-                        class="hero__image"
-                        alt="hero image"
-                    >
+                <div class="hero__our_client">
+                    <img src="./assets/img/testimonial-client.png" alt="">
+                    <span>100+ Klien puas dengan service kami</span>
                 </div>
             </div>
+            <div>
+                <img 
+                    src="./assets/img/hero-image.png" 
+                    class="hero__image"
+                    alt="hero image"
+                >
+            </div>
         </div>
-        <!-- Akhir Hero -->
-
-        <!-- Compeny Partner -->
-        <div class="company_partner">
-            <span class="small__title">Dipercaya oleh perusahaan diseluruh Indonesia</span>
-            <div class="company_partner__container">
+    </div>
+    <!-- Akhir Hero -->
+    
+    <!-- Compeny Partner -->
+    <div class="company_partner">
+        <div class="company_partner__container">
+            <div class="company_partner__left">
                 <div>
+                    <img 
+                        src="./assets/logo/logo-mydoit.png" 
+                        width="169"
+                        height="46"
+                        alt="logo mydoit"
+                    >
+                </div>
+                <p>Dipercaya oleh Perusahaan Diseluruh <b>Indonesia</b></p>
+            </div>
+            <div class="company_partner__right">
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-eduwork-white.png" alt="logo eduwork">
                 </div>
-                <div>
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-hisocial-white.png" alt="logo hisocial">
                 </div>
-                <div>
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-upscale-white.png" alt="logo upscale">
                 </div>
-                <div>
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-elvron-white.png" alt="logo elvron">
                 </div>
-                <div>
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-sisko-white.png" alt="logo sisko">
                 </div>
-                <div>
+                <div class="company_partner__logo">
                     <img src="./assets/logo/logo-maju-white.png" alt="logo maju">
                 </div>
             </div>
         </div>
-        <!-- Akhir Compeny Partner -->
     </div>
+    <!-- Akhir Compeny Partner -->
 
     <!-- Tentang Kami -->
     <div class="tentang_kami">
@@ -124,11 +136,17 @@
     <!-- Keuntungan -->
     <div class="keuntungan">
         <div class="keuntungan__container">
-            <h3 class="keuangan__title">
-                <span class="keuntungan__title_smal">Keuntungan bergabung dengan</span><br/>
-                Mydoit Corporate
-            </h3>
-            <div class="keuntungan__list">
+            <div class="keuntungan__left">
+                <h3 class="keuangan__title">
+                    <span class="keuntungan__title_smal">Keuntungan bergabung dengan</span><br/>
+                    Mydoit Corporate
+                </h3>
+                <button class="button__arrow_forward_green" style="padding: 14px 0; font-size: 16px; font-weight: 600; width: 88%;">
+                    Bergabung sekarang
+                    <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
+                </button>
+            </div>
+            <div class="keuntungan__right">
                 <ul>
                     <li>
                         <span><img src="./assets/icon/work.svg" class="keuntungan__icon" alt="icon"></span>
@@ -145,7 +163,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <span><img src="./assets/icon/Group.svg" style="padding: 11px;" class="keuntungan__icon" alt="icon"></span>
+                        <span><img src="./assets/icon/Group.svg" class="keuntungan__icon" alt="icon"></span>
                         Privasi dan keamanan data
                     </li>
                     <li>
@@ -153,22 +171,22 @@
                         Akurasi data
                     </li>
                     <li>
-                        <span><img src="./assets/icon/circle.svg" style="padding: 11px;" class="keuntungan__icon" alt="icon"></span>
+                        <span><img src="./assets/icon/circle.svg" class="keuntungan__icon" alt="icon"></span>
                         Fleksibilitas Kebutuhan
                     </li>
                 </ul>
             </div>
-            <button class="button__arrow_forward_green">
-                Bergabung sekarang
-                <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
-            </button>
+            <!-- <div class="keuntungan__list">
+                
+                
+            </div>
             <div class="keuntungan__image">
                 <img 
                     src="./assets/img/keuntungan.png" 
                     alt="gambar"
                     style="width: 352px;"
                 >
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Akhir Keuntungan -->
@@ -178,13 +196,15 @@
         <div class="layanan_kami__container">
             <hr class="layanan_kami__garis">
             <h3 class="layanan_kami__title1">Kenali <span>Layanan Kami</span></h3>
-            <div style="display: flex; flex-direction: column; gap: 120px; width: 100%;">
+            <div style="display: flex; flex-direction: column; gap: 80px; width: 100%;">
                 <!-- Akuntansi -->
                 <div class="layanan_kami__card">
                     <div>
-                        <img src="./assets/img/akuntansi.png" width="390px" alt="gambar">
+                        <div class="layanan_kami__gambar">
+                            <img src="./assets/img/akuntansi.png" width="363px" alt="gambar">
+                        </div>
                         <div class="layanan_kami__price">
-                            <div>
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #F4F5F7; border-radius: 15px;">
                                 <span style="font-size: 14px; color: #737373;">Mulai dari</span>
                                 <span 
                                     style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #FA8100;"
@@ -192,152 +212,174 @@
                                     Rp
                                 </span>
                                 <span 
-                                    style="font-size: 64px; font-weight: 700; color: #FA8100;"
+                                    style="font-size: 36px; font-weight: 700; color: #FA8100;"
                                 >
-                                    1 Juta
+                                    1.000.000,-
                                 </span>
                             </div>
-                            <button 
-                                class="button__arrow_forward_green"
-                                style="width: 100%; margin-top: 30px; font-size: 16px; letter-spacing: 0.64px;"
-                            >
-                                Pelajari Selengkapnya
-                                <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
-                            </button>
                         </div>
                     </div>
                     <div>
                         <h1 class="layanan_kami__judul">Akuntansi</h1>
                         <p class="layanan_kami__desk">Navigasi kompleksitas pelaporan keuangan dengan keyakinan. Tim ahli kami memastikan laporan keuangan yang akurat,
                         sistematis yang dilengkapi dengan analisis bisnis untuk mendukung proses pengambilan keputusan.</p>
-                        <ul class="layanan_kami__list">
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Rekonsiliasi kas dan bank</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Account payable</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Account receivable</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Manajemen persediaan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Payroll</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Analisis keuangan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
-                        </ul>
+                        <div style="display: flex; gap: 18px;">
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Rekonsiliasi kas dan bank</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Account payable</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Account receivable</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Manajemen persediaan</li>
+                            </ul>
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Payroll</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Analisis keuangan</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
+                            </ul>
+                        </div>
+                        <button class="button__arrow_forward_green"
+                            style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
+                            Pelajari Selengkapnya
+                            <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
+                        </button>
                     </div>
                 </div>
                 <!-- Akhir Akuntansi -->
 
                 <!-- Perpajakan -->
-                <div class="layanan_kami__card_image_right">
+                <div class="layanan_kami__card__right">
                     <div>
-                        <img src="./assets/img/perpajakan.png" width="390px" alt="gambar">
+                        <h1 class="layanan_kami__judul">Perpajakan</h1>
+                        <p class="layanan_kami__desk">Pelaporan pajak tepat waktu. Tim spesialis kami menghitung, menyiapkan, dan melaporkan
+                        pajakmu dengan tepat, memastikan
+                        compliance dan mengoptimalkan posisi pajakmu.</p>
+                        <div style="display: flex; gap: 18px;">
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> SPT PPN</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh pasal 4 ayat 2</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penerbitan e-Faktur</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Manajemen persediaan</li>
+                            </ul>
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Payroll</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Analisis keuangan</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh (21,23,25,26,29)</li>
+                            </ul>
+                        </div>
+                        <button class="button__arrow_forward_green"
+                            style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
+                            Pelajari Selengkapnya
+                            <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
+                        </button>
+                    </div>
+                    <div>
+                        <div class="layanan_kami__gambar">
+                            <img src="./assets/img/perpajakan.png" width="363px" alt="gambar">
+                        </div>
                         <div class="layanan_kami__price">
-                            <div>
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #F4F5F7; border-radius: 15px;">
                                 <span style="font-size: 14px; color: #737373;">Mulai dari</span>
                                 <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #FA8100;">
                                     Rp
                                 </span>
-                                <span style="font-size: 64px; font-weight: 700; color: #FA8100;">
-                                    1 Juta
+                                <span style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    1.000.000,-
                                 </span>
                             </div>
-                            <button class="button__arrow_forward_green"
-                                style="width: 100%; margin-top: 30px; font-size: 16px; letter-spacing: 0.64px;">
-                                Pelajari Selengkapnya
-                                <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
-                            </button>
                         </div>
-                    </div>
-                    <div>
-                        <h1 class="layanan_kami__judul">Perpajakan</h1>
-                        <p class="layanan_kami__desk">Pelaporan pajak tepat waktu. Tim spesialis kami menghitung, menyiapkan, dan melaporkan pajakmu dengan tepat, memastikan
-                        compliance dan mengoptimalkan posisi pajakmu.</p>
-                        <ul class="layanan_kami__list">
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Hitung & laporan SPT PPh badan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh (21,23,25,26,29)</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh pasal 4 ayat 2</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh final UMKM</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penerbitan final UMKM</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penerbitan e-Faktur</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> SPT PPN</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> SPT PPh pribadi</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pembuatan NPWP</li>
-                        </ul>
                     </div>
                 </div>
                 <!-- Akhir Perpajakan -->
 
-                <!-- Analisis Bisnis -->
+                <!-- Akuntansi -->
                 <div class="layanan_kami__card">
                     <div>
-                        <img src="./assets/img/analisis-bisnis.png" width="390px" alt="gambar">
+                        <div class="layanan_kami__gambar">
+                            <img src="./assets/img/akuntansi.png" width="363px" alt="gambar">
+                        </div>
                         <div class="layanan_kami__price">
-                            <div>
+                            <div
+                                style="text-align: center; padding: 13px 24px 23px 24px; background-color: #F4F5F7; border-radius: 15px;">
                                 <span style="font-size: 14px; color: #737373;">Mulai dari</span>
                                 <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #FA8100;">
                                     Rp
                                 </span>
-                                <span style="font-size: 64px; font-weight: 700; color: #FA8100;">
-                                    1 Juta
+                                <span style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    1.000.000,-
                                 </span>
                             </div>
-                            <button class="button__arrow_forward_green"
-                                style="width: 100%; margin-top: 30px; font-size: 16px; letter-spacing: 0.64px;">
-                                Pelajari Selengkapnya
-                                <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
-                            </button>
                         </div>
                     </div>
                     <div>
-                        <h1 class="layanan_kami__judul">Analisis bisnis</h1>
+                        <h1 class="layanan_kami__judul">Analisis Bisnis</h1>
                         <p class="layanan_kami__desk">Analisis Bisnis untuk pengambilan keputusan dengan analisis medalam. Para ahli kami menggali data keuanganmu, memberikan
                         wawasan yang dapat diambil tindakan untuk mendorong pertumbuhan, meningkatkan efisiensi, dan memaksimalkan
                         profitabilitas.</p>
-                        <ul class="layanan_kami__list">
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan anggaran</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Finansial modeling</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Visualisasi bisnis</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Strategi mengelola pendapatan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pembuatan annual report</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pembuatan SOP keuangan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Forecasting kas/ biaya/ pendapatan</li>
-                        </ul>
+                        <div style="display: flex; gap: 18px;">
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan anggaran</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Finansial modeling</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Visualisasi bisnis</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Strategi mengelola pendapatan</li>
+                            </ul>
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pembuatan annual report</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pembuatan SOP keuangan</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Forecasting kas/biaya/pendapatan</li>
+                            </ul>
+                        </div>
+                        <button class="button__arrow_forward_green"
+                            style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
+                            Pelajari Selengkapnya
+                            <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
+                        </button>
                     </div>
                 </div>
-                <!-- Akhir Analisis Bisnis -->
+                <!-- Akhir Akuntansi -->
 
-                <!-- Pelatihan Sistem Akuntansi -->
-                <div class="layanan_kami__card_image_right">
-                    <div>
-                        <img src="./assets/img/pelatihan-sistem-akuntansi.png" width="390px" alt="gambar">
-                        <div class="layanan_kami__price">
-                            <div>
-                                <span style="font-size: 14px; color: #737373;">Mulai dari</span>
-                                <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #FA8100;">
-                                    Rp
-                                </span>
-                                <span style="font-size: 64px; font-weight: 700; color: #FA8100;">
-                                    1 Juta
-                                </span>
-                            </div>
-                            <button class="button__arrow_forward_green"
-                                style="width: 100%; margin-top: 30px; font-size: 16px; letter-spacing: 0.64px;">
-                                Pelajari Selengkapnya
-                                <img src="./assets/icon/arrow_forward_ios.svg" width="24px" height="24px" alt="icon">
-                            </button>
-                        </div>
-                    </div>
+                <!-- Pelatihan sistem akuntansi -->
+                <div class="layanan_kami__card__right">
                     <div>
                         <h1 class="layanan_kami__judul">Pelatihan sistem akuntansi</h1>
                         <p class="layanan_kami__desk">Pelatihan sistem akuntansi untuk mewujudkan digitalisasi dalam lingkup bisnis serta memudahkan monitoring data
                         keuangan. Tingkatkan kualitas SDM dan pengelolaan data keuangan melalui pelatihan sistem akuntansi.</p>
-                        <ul class="layanan_kami__list">
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsep</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsultasi</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pengumpulan Data Saldo Awal</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Setting Database Awal</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pelatihan dan Pendampingan</li>
-                            <li><img src="./assets/icon/check_circle.svg" alt="icon"> Implementasi</li>
-                        </ul>
+                        <div style="display: flex; gap: 18px;">
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsep</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsultasi</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pengumpulan data saldo awal</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Setting database awal</li>
+                            </ul>
+                            <ul class="layanan_kami__list" style="flex: 1;">
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Pelatihan dan pendampingan</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Implementasi</li>
+                                <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
+                            </ul>
+                        </div>
+                        <button class="button__arrow_forward_green"
+                            style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
+                            Pelajari Selengkapnya
+                            <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
+                        </button>
+                    </div>
+                    <div>
+                        <div class="layanan_kami__gambar">
+                            <img src="./assets/img/akuntansi.png" width="363px" alt="gambar">
+                        </div>
+                        <div class="layanan_kami__price">
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: #F4F5F7; border-radius: 15px;">
+                                <span style="font-size: 14px; color: #737373;">Mulai dari</span>
+                                <span style="padding-left: 24px; font-size: 32px; font-weight: 700; color: #FA8100;">
+                                    Rp
+                                </span>
+                                <span style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    1.000.000,-
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Akhir Pelatihan Sistem Akuntansi -->
+                <!-- Akhir Akuntansi -->
             </div>
         </div>
     </div>
@@ -347,12 +389,11 @@
     <div class="langkah_pemesanan">
         <div class="langkah_pemesanan__container">
             <h3 class="langkah_pemesanan__judul">Langkah - Langkah <span>Pemesanan</span></h3>
-            <hr class="langkah_pemesanan__garis">
             <div style="width: 100%; margin-top: 80px;">
                 <img 
                     src="./assets/img/langkah-pemesanan.png" 
                     width="992" 
-                    height="281"
+                    height="227"
                     class="langkah_pemesanan__gambar"
                     alt="gambar"
                 >
@@ -363,44 +404,35 @@
 
     <!-- Banner MyDoit Mobile -->
     <div class="banner_mydoit_mobile">
-        <img 
-            src="./assets/img/texture.png" 
-           
-            class="banner_mydoit_mobile__texture"
-            alt="texture"
-        >
         <div class="banner_mydoit_mobile__container">
-            <div>
-                <p class="banner_mydoit_mobile__question">“Butuh finansial manajemen pribadi untuk mencapai kebebasan finansial?”</p>
+            <div style="padding: 60px 0 0px 60px;">
+                <p class="banner_mydoit_mobile__question">“Butuh finansial manajemen <br>pribadi untuk mencapai kebebasan
+                    finansial?”</p>
                 <h3 class="banner_mydoit_mobile__judul">MyDoit Mobile</h3>
-                <p class="banner_mydoit_mobile__desk">Solusi tepat untuk wujudkan kebebasan finansial. Download aplikasi kami sekarang, dan nikmati berbagai fitur unggulan
-                dari kami <b>GRATIS!</b></p>
-                <div style="width: 390px;">
-                    <p style="margin: 30px 0; font-size: 16px; color: #FAF8F8; text-align: center;">Download disini</p>
-                    <div style="display: flex; align-items: center; gap: 32px;">
-                        <a href='http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' style="flex: 1;">
-                            <img
-                                alt='Temukan di Google Play'
+                <p class="banner_mydoit_mobile__desk">Solusi tepat untuk wujudkan kebebasan finansial. Download aplikasi kami
+                    sekarang, dan nikmati berbagai fitur unggulan
+                    dari kami <b>GRATIS!</b></p>
+                <div style="margin-top: 26px;">
+                    <div style="display: grid; grid-template-columns: 179px 179px; align-items: center; gap: 32px;">
+                        <a href='http://play.google.com/store/?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                            style="flex: 1;">
+                            <img alt='Temukan di Google Play'
                                 src='https://play.google.com/intl/en_us/badges/static/images/badges/id_badge_web_generic.png'
-                                style="width: 100%;"
-                            />
+                                style="width: 100%;" />
                         </a>
-                        
-                        <a href="https://apps.apple.com/us/app/mobile-legends-bang-bang/id1160056295?itsct=apps_box_badge&amp;itscg=30200" style="display: block; overflow: hidden; border-radius: 13px; width: 100%; flex: 1;">
-                            <img
-                                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/id-id?size=250x83&amp;releaseDate=1478908800"
+            
+                        <a href="https://apps.apple.com/us/app/mobile-legends-bang-bang/id1160056295?itsct=apps_box_badge&amp;itscg=30200"
+                            style="display: block; overflow: hidden; border-radius: 13px; width: 100%; flex: 1;">
+                            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/id-id?size=250x83&amp;releaseDate=1478908800"
                                 alt="Download on the App Store" style="border-radius: 13px; width: 100%;">
                         </a>
                     </div>
-                    <button class="button__arrow_forward_green" style="width: 100%; margin-top: 80px;">
-                        Kunjungi website
-                        <img src="./assets/icon/launch.svg" width="24" height="24" alt="icon">
-                    </button>
                 </div>
             </div>
-            <div>
-                <img src="./assets/img/mockup-mydoit-mobile.png" width="427" height="649" alt="mockup">
+            <div class="banner_mydoit_mobile__image">
+                <img src="./assets/img/mockup-mydoit-mobile.png" style="position: absolute; left: -30px; bottom: -20px; width: 100%;" alt="mockup">
             </div>
+            
         </div>
     </div>
     <!-- Akhir Banner MyDoit Mobile -->
@@ -455,10 +487,10 @@
                     </div>
                 </div>
                 <button class="swiper_pengguna_button_prev">
-                    <img src="./assets/icon/arrow_forward_ios.svg" width="40" height="40" style="transform: rotate(180deg);" alt="icon">
+                    <img src="./assets/icon/arrow_forward_ios.svg" width="20" height="20" style="transform: rotate(180deg);" alt="icon">
                 </button>
                 <button class="swiper_pengguna_button_next">
-                    <img src="./assets/icon/arrow_forward_ios.svg" width="40" height="40" alt="icon">
+                    <img src="./assets/icon/arrow_forward_ios.svg" width="20" height="20" alt="icon">
                 </button>
             </div>
             <div class="swiper_pengguna__content">
@@ -478,8 +510,7 @@
             <div>
                 <img 
                     src="./assets/img/cta-image.png" 
-                    width="490"
-                    height="489"
+                    width="387"
                     alt="cta"
                 >
             </div>
@@ -493,7 +524,7 @@
                 <h3>Jadikan Keuangan Bisnismu Lebih Baik Hari Ini!</h3>
                 <p>Hubungi kami sekarang untuk mendapatkan solusi keuangan yang tepat untuk bisnismu</p>
                 <button>
-                    Dapatkan konsultasi gratis
+                    Konsultasi gratis
                     <img src="./assets/icon/arrow_forward_ios.svg" alt="icon">
                 </button>
             </div>
@@ -505,11 +536,8 @@
     <div class="baca_artikel">
         <div class="baca_artikel__container">
             <div class="baca_artikel__header">
-                <h3>Baca <span style="color: #FA8100;">Artikel</span></h3>
-                <button>
-                    Lihat Semua
-                    <img src="./assets/icon/arrow_forward_ios.svg" width="12" height="12" alt="">
-                </button>
+                <hr style="border: 2px solid #007E4C;">
+                <h3>Baca Artikel</h3>
             </div>
             <div class="artikel__container">
                 <div class="artikel__card">

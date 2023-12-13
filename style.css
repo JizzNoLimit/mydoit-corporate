@@ -37,12 +37,6 @@ button {
     border: none;
 }
 
-/* Style Mobile */
-body {
-    background-color: var(--bg-white);
-}
-/* Akhir Style Mobile */
-
 /* Utiliti */
 .button__arrow_forward_green {
     display: flex;
@@ -59,12 +53,45 @@ body {
     border-radius: 15px;
 }
 
-/* Style Tablet */
-@media screen and (min-width: 768px) {
+/* Style Mobile */
+@media screen and (max-width: 1023px) {
     body {
         background-color: var(--bg-white);
     }
-}
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        padding: 12px 0;
+        background-color: white;
+    }
+    .navbar__container {
+        display: flex;
+    
+    }
+    .navbar__logo {
+        width: 130px;
+    }
+    
+    .navbar__menu,
+    .navbar__contact {
+        display: none;
+    }
+    /* Navbar */
+    
+    .tentang_kami,
+    .keuntungan,
+    .layanan_kami,
+    .langkah_pemesanan, 
+    .banner_mydoit_mobile,
+    .pengguna__mydoit,
+    .cta_home,
+    .baca_artikel,
+    .qna,
+    .footer {
+        display: none;
+    }
+    /* Akhir Style Mobile */
+} 
 
 /* Style Laptop */
 @media screen and (min-width: 1024px) {
@@ -117,14 +144,19 @@ body {
         height: 20px;
     }
     .navbar__contact {
+        display: block;
+        width: 172px;
+        padding: 16px 0;
         font-size: 16px;
-        padding: 14px 32px;
         color: var(--primary-500);
         font-weight: 600;
         line-height: 4px;
         background-color: var(--bg-white);
         border: 1.8px solid var(--primary-500);
         border-radius: 8px;
+    }
+    .navbar__menu__mobile {
+        display: none;
     }
     /* Akhir Navbar */
 
@@ -146,7 +178,7 @@ body {
         inset: 0;
         object-fit: contain;
         object-position: center;
-        width: 100%;
+        height: 102%;
         z-index: 0;
     }
     .hero__container {
@@ -154,23 +186,24 @@ body {
         display: grid;
         grid-template-columns: 554px auto;
         align-items: center;
-        gap: 26px;
+        gap: 9px;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
     }
     .hero__title {
-        margin-bottom: 28px;
-        font-size: 42px;
+        margin-bottom: 24px;
+        font-size: 45px;
+        font-style: normal;
         font-weight: 700;
-        color: white;
         line-height: normal;
+        color: white;
     }
     .hero__title span {
         color: var(--ss-400);
     }
     .hero__deskription {
-        margin-bottom: 64px;
+        margin-bottom: 34px;
         font-size: 20px;
         line-height: 32px;
         color: white;
@@ -178,7 +211,6 @@ body {
     .hero__image {
         width: 100%;
         height: auto;
-        margin-top: -28px;
     }
     .hero__wrapper_button {
         display: flex;
@@ -187,7 +219,7 @@ body {
     .hero__wrapper_button button {
         width: 215px;
         padding: 15px 0;
-        margin-bottom: 64px;
+        margin-bottom: 34px;
         font-weight: 600;
         line-height: 20px;
         letter-spacing: 0.64px;
@@ -218,31 +250,39 @@ body {
     /* Akhir Hero */
 
     /* Company Partner */
-    .hero__company_partner {
-        background-color: #005433;
-        border-radius: 0 0 50px 50px;
-    }
     .company_partner {
         max-width: 1000px;
         width: 100%;
         height: auto;
         margin: 0 auto;
-        padding: 60px 0 67px 0;
-        text-align: center;
-    }
-    .small__title {
-        display: block;
-        font-size: 24px;
-        font-weight: 600;
-        color: #fff;
-        margin-bottom: 60px;
+        padding: 84px 0;
     }
     .company_partner__container {
+        display: grid;
+        grid-template-columns: 245px auto;
+        column-gap: 46px;
+    }
+    .company_partner__left p {
+        margin-top: 26px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 33.6px */
+        color: #252525;
+    }
+    .company_partner__right {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+    .company_partner__logo {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        row-gap: 40px;
-        column-gap: 80px;
+        align-items: center;
+        width: 100%;
+        height: 94px;
+        border-radius: 10px;
+        background-color: #F4F5F7;
     }
     /* Akhir Company Partner */
 
@@ -282,52 +322,65 @@ body {
         width: 100%;
         height: auto;
         padding: 65px 0 86px 0;
-        background-color: #FAF8F8;
     }
     .keuntungan__container {
         position: relative;
+        display: grid;
+        grid-template-columns: 347px auto;
+        gap: 56px;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
+        padding: 60px 40px;
+        border-radius: 20px;
+        background-color: #FAF8F8;
+    }
+    .keuntungan__left {
+        flex: 347px;
+    }
+    .keuntungan__right {
+        flex: auto;
+        display: flex;
+        gap: 30px;
+        padding: 20px 0;
     }
     .keuangan__title {
-        margin-bottom: 52px;
+        margin-bottom: 36px;
         font-size: 36px;
+        font-style: normal;
         font-weight: 700;
-        color: #00A866;
-        line-height: 120%;
+        line-height: 130%;
         letter-spacing: 1.44px;
+        color: #00A866;
     }
     .keuntungan__title_smal {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
         color: #252525;
         line-height: 120%; /* 28.8px */
-        letter-spacing: 0.96px;
     }
-    .keuntungan__list {
+    .keuntungan__right ul {
         display: flex;
-        gap: 40px;
-        margin-bottom: 80px;
-        font-size: 20px;
-        font-weight: 600;
-        color: #252525;
-        line-height: 160%; /* 32px */
-        letter-spacing: 0.8px;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .keuntungan__list ul li {
+    .keuntungan__right ul li {
         display: flex;
         align-items: center;
-        gap: 24px;
-        margin-top: 12px;
+        gap: 18px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 28.8px */
+        letter-spacing: 0.72px;
     }
-    .keuntungan__list span {
+    .keuntungan__right span {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 40px;
         height: 40px;
-        background-color: #FA8100;
+        background-color: rgba(0, 210, 127, .1);
         border-radius: 50%;
     }
     /* .keuntungan__icon {
@@ -346,7 +399,7 @@ body {
     .layanan_kami {
         width: 100%;
         height: auto;
-        padding: 84px 0;
+        padding: 70px 0;
     }
     .layanan_kami__container {
         display: flex;
@@ -363,7 +416,7 @@ body {
     .layanan_kami__title1 {
         display: inline-block;
         margin-top: -24px;
-        margin-bottom: 105px;
+        margin-bottom: 80px;
         padding: 0 24px;
         text-align: center;
         font-size: 32px;
@@ -377,28 +430,43 @@ body {
         color: #00A866;
     }
     .layanan_kami__card {
+        display: grid;
+        grid-template-columns: 434px auto;
+        gap: 44px;
+    }
+    .layanan_kami__card__right {
+        display: grid;
+        grid-template-columns: auto 434px;
+        gap: 44px;
+    }
+    .layanan_kami__gambar {
+        width: 100%;
+        height: 280px;
         display: flex;
-        gap: 134px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: #F4F5F7;
     }
     .layanan_kami__price {
-        margin-top: 70px;
+        margin-top: 10px;
     }
     .layanan_kami__judul {
-        margin-bottom: 40px;
-        font-size: 48px;
+        margin-bottom: 16px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 120%; /* 57.6px */
-        letter-spacing: 1.92px;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 0.96px;
         color: #007E4C;
     }
     .layanan_kami__desk {
-        margin-bottom: 50px;
+        margin-bottom: 27px;
         text-align: justify;
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 160%; /* 25.6px */
+        font-weight: 500;
+        line-height: 160%; /* 22.4px */
         color: #252525;
     }
     .layanan_kami__card_image_right {
@@ -411,10 +479,10 @@ body {
         align-items: center;
         gap: 12px;
         margin-bottom: 11px;
-        font-size: 20px;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 160%; /* 32px */
+        font-weight: 500;
+        line-height: 160%; /* 22.4px */
         color: #252525;
     }
     /* Akhir Layanan Kami */
@@ -423,7 +491,7 @@ body {
     .langkah_pemesanan {
         position: relative;
         width: 100%;
-        padding: 84px 0;
+        padding: 70px 0;
     }
     .langkah_pemesanan__container {
         max-width: 1000px;
@@ -442,49 +510,39 @@ body {
     .langkah_pemesanan__judul span {
         color: #00A866;
     }
-    .langkah_pemesanan__garis {
-        width: 112.5px;
-        height: 0px;
-        margin: 0 auto;
-        border: 4px solid #FA8100;
-    }
     /* Akhir Langkah Pemesanan */
     /* Banner MyDoit Mobile */
     .banner_mydoit_mobile {
-        position: relative;
         width: 100%;
-        height: 700px;
-        background-color: #007E4C;
-        overflow: hidden;
     }
-    .banner_mydoit_mobile__texture {
-        position: absolute;
-        width: 120%;
-        object-fit: cover;
-        object-position: center;
-        z-index: 0;
-    }
+
     .banner_mydoit_mobile__container {
         position: relative;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto 437px;
         max-width: 1000px;
         width: 100%;
+        height: 422px;
         margin: 0 auto;
-        padding: 74px 0;
-        gap: 58px;
+        background-image: url('./assets/img/texture.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        overflow: hidden;
         z-index: 1;
+        border-radius: 30px;
     }
+    
     .banner_mydoit_mobile__question {
-        margin-bottom: 70px;
-        font-size: 20px;
+        margin-bottom: 26px;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 600;
-        line-height: 120%; /* 24px */
-        letter-spacing: 0.8px;
+        font-weight: 400;
+        line-height: 130%; /* 20.8px */
         color: white;
     }
     .banner_mydoit_mobile__judul {
-        margin-bottom: 30px;
+        margin-bottom: 14px;
         font-size: 48px;
         font-style: normal;
         font-weight: 800;
@@ -499,6 +557,13 @@ body {
         line-height: 160%; /* 25.6px */
         letter-spacing: 0.64px;
         color: white;
+    }
+    .banner_mydoit_mobile__image {
+        position: relative;
+        width: 100%;
+        height: 97%;
+        overflow: hidden;
+
     }
     /* Akhir Banner MyDoit Mobile */
 
@@ -593,8 +658,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         background-color: #64E4B1;
         transform: translateY(-50%);
         border-radius: 50%;
@@ -642,31 +707,32 @@ body {
     .cta_home {
         width: 100%;
         height: auto;
-        padding: 84px 0;
+        padding: 70px 0;
     }
     .cta_home__container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 387px auto;
         align-items: end;
         gap: 85px;
         max-width: 1000px;
         width: 100%;
+        padding: 0 20px;
         margin: 0 auto;
     }
     .cta_home__content {
         padding-bottom: 27px;
     }
     .cta_home__content h3 {
-        margin-top: 30px;
+        margin-top: 33px;
         margin-bottom: 10px;
-        font-size: 24px;
+        font-size: 36px;
         font-style: normal;
         font-weight: 600;
-        line-height: 160%; /* 38.4px */
-        letter-spacing: 0.96px;
+        line-height: 130%; /* 46.8px */
         color: #252525;
     }
     .cta_home p {
-        margin-bottom: 54px;
+        margin-bottom: 30px;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -677,9 +743,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 12px;
-        width: 380px;
-        padding: 18px 0;
+        gap: 8px;
+        width: 228px;
+        height: 50px;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -702,40 +768,28 @@ body {
         width: 100%;
         margin: 0 auto;
         padding-top: 40px;
-        border-top: 1px solid #C7C7C7;
-    }
-    .baca_artikel__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 40px;
     }
     .baca_artikel__header h3 {
-        font-size: 36px;
+        width: 220px;
+        margin: 0 auto;
+        margin-top: -22px;
+        margin-bottom: 60px;
+        text-align: center;
+        font-size: 32px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        background-color: white;
         color: #252525;
-    }
-    .baca_artikel__header button {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 10px 24px;
-        font-size: 14px;
-        font-weight: 500;
-        border-radius: 10px;
-        color: white;
-        background-color: #00D27F;
     }
     .artikel__container {
         display: flex;
-        gap: 20px;
+        gap: 64px;
     }
     .artikel__card {
         display: grid;
-        grid-template-columns: 235px auto ;
-        gap: 14px;
+        grid-template-columns: 171px auto ;
+        gap: 24px;
         align-items: center;
         width: 100%;
         background-color: white;
@@ -743,14 +797,15 @@ body {
     .artikel__image_box {
         position: relative;
         width: 100%;
+        height: 181px;
         border-radius: 20px;
         overflow: hidden;
     }
     .artikel__tags {
         display: inline-block;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
         padding: 5px 10px;
-        font-size: 13px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 500;
         line-height: 150%; /* 19.5px */
@@ -759,7 +814,7 @@ body {
         background-color: #FA8100;
     }
     .artikel__judul {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         font-size: 16px; 
         font-style: normal;
         font-weight: 600;
@@ -767,7 +822,8 @@ body {
         color: black;
     }
     .artikel__isi {
-        margin-bottom: 45px;
+        margin-bottom: 18px;
+        text-align: justify;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -985,61 +1041,6 @@ body {
 
 /* Style Desktop */
 @media screen and (min-width: 1366px) {
-    body {
-        background-color: white;
-    }
-
-    /* Navbar */
-    .navbar {
-        padding: 34px 0;
-        background-color: white;
-    }
-    .navbar__logo {
-        width: 212px;
-        height: auto;
-    }
-    .navbar__menu {
-        gap: 52px;
-    }
-    .navbar__manu_expand_more {
-        gap: 10px;
-    }
-    .navbar__contact {
-        padding: 16px 36px;
-        border: 2px solid var(--primary-500);
-        border-radius: 10px;
-    }
-    /* Akhir Navbar */
-
-    /* Hero */
-    .hero {
-        padding: 60px 0;
-    }
-    .hero__container {
-        gap: 30px;
-    }
-    .hero__title {
-        margin-bottom: 38px;
-    }
-    .hero__deskription {
-        margin-bottom: 74px;
-    }
-    .hero__wrapper_button {
-        gap: 20px;
-    }
-    .hero__wrapper_button button {
-        width: 215px;
-        padding: 15px 0;
-        margin-bottom: 74px;
-        font-weight: 600;
-        line-height: 20px;
-        letter-spacing: 0.64px;
-        border-radius: 15px;
-    }
-    .hero__our_client {
-        gap: 19px;
-    }
-    /* Akhir Hero */
     
 
 }
