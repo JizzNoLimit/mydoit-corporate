@@ -148,10 +148,10 @@ button {
         height: 100%;
     }
     .hero__title {
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
-        line-height: normal;
+        line-height: 1.6;
         color: white;
     }
     .hero__title span {
@@ -168,14 +168,14 @@ button {
         font-weight: 400;
         line-height: 160%; /* 12.8px */
         letter-spacing: 0.32px;
-        margin-top: 16px;
+        margin-top: 12px;
         color: white;
     }
     .hero__wrapper_button {
         display: flex;
         gap: 12px;
         justify-content: center;
-        margin-top: 16px;
+        margin-top: 24px;
     }
     .hero__wrapper_button > button {
         display: flex;
@@ -256,7 +256,7 @@ button {
     }
     .company_partner__left p {
         margin-top: 8px;
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 140%; /* 11.2px */
@@ -301,7 +301,7 @@ button {
         background-color: rgba(244, 245, 247, 0.62);
     }
     .tentang_kami__title1 {
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         line-height: 160%; /* 12.8px */
@@ -317,7 +317,7 @@ button {
         display: block !important;
     }
     .tentang_kami__deskription {
-        font-size: 10px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 12.8px */
