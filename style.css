@@ -252,6 +252,7 @@ button {
         text-align: center;
     }
     .company_partner__left img{
+        display: none;
         width: 96px;
         height: 27px;
     }
@@ -298,7 +299,7 @@ button {
         width: 60%;
     }
     .tentang_kami__main {
-        padding: 24px 18px;
+        padding: 24px 20px;
         border-radius: 8px;
         background-color: rgba(244, 245, 247, 0.62);
     }
@@ -328,6 +329,64 @@ button {
         line-height: 160%; /* 12.8px */
     }
     /* Akhir Tentang Kami */
+
+    /* Keuntungan */
+    .keuntungan {
+        width: 100%;
+        padding: 40px 16px;
+    }
+    .keuntungan__container {
+        width: 100%;
+        padding: 24px 20px;
+        background-color: rgba(244, 245, 247, 0.62);
+        border-radius: 8px;
+    }
+    .keuangan__title {
+        margin-bottom: 24px;
+        font-size: 26px;
+        color: #00A866;
+    }
+    .keuntungan__title_smal {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #252525;
+    }
+    .keuntungan__left button {
+        display: none;
+    }
+    .keuntungan__right ul li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .keuntungan__right ul li span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        background-color: rgba(0, 210, 127, .1);
+        border-radius: 50%;
+    }
+    .keuntungan__icon {
+        width: 60%;
+    }
+    .keuntungan__button {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 28px;
+        padding: 14px;
+        font-weight: 600;
+        border-radius: 10px;
+        color: white;
+        background-color: #00D27F;
+    }
+    /* Akhir Keuntungan */
     .layanan_kami,
     .langkah_pemesanan, 
     .banner_mydoit_mobile,
