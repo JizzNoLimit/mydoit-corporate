@@ -54,6 +54,7 @@ button {
 }
 
 /* Style Mobile */
+@media (min-width: 300px) and (max-width: 1023px) {
     body {
         background-color: var(--bg-white);
     }
@@ -290,17 +291,20 @@ button {
     }
     .tentang_kami__gambar {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         text-align: center;
     }
     .tentang_kami img {
-        width: 50%;
+        width: 60%;
     }
     .tentang_kami__main {
         padding: 24px 18px;
+        border-radius: 8px;
         background-color: rgba(244, 245, 247, 0.62);
     }
     .tentang_kami__title1 {
+        display: block;
+        margin-bottom: 8px;
         font-size: 12px;
         font-style: normal;
         font-weight: 500;
@@ -311,19 +315,19 @@ button {
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
-        line-height: 120%; /* 12px */
+        line-height: 1.5;
     }
     .tentang_kami__title2 br {
         display: block !important;
     }
     .tentang_kami__deskription {
+        text-align: justify;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 160%; /* 12.8px */
     }
     /* Akhir Tentang Kami */
-    .keuntungan,
     .layanan_kami,
     .langkah_pemesanan, 
     .banner_mydoit_mobile,
@@ -335,6 +339,8 @@ button {
         display: none;
     }
     /* Akhir Style Mobile */
+}
+
 /* Style Laptop */
 @media (min-width: 1024px) {
     body {
