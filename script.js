@@ -71,3 +71,11 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// Nabar Menu
+const menu = document.querySelector('.navbar__menubar')
+const menu_list = document.querySelector('.navbar__menu_mobile')
+
+menu.addEventListener('click', () => {
+    menu_list.classList.toggle('active')
+})

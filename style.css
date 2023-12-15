@@ -60,25 +60,270 @@ button {
     }
     /* Navbar */
     .navbar {
+        position: sticky;
+        top: 0;
         width: 100%;
-        padding: 12px 0;
+        padding: 14px 16px;
         background-color: white;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.10);
+        z-index: 100;
     }
     .navbar__container {
         display: flex;
-    
+        justify-content: space-between;
+        align-items: center;
     }
     .navbar__logo {
-        width: 130px;
+        width: 160px;
     }
-    
+    .navbar__menubar {
+        padding: 6px;
+    }
     .navbar__menu,
     .navbar__contact {
         display: none;
     }
+    .navbar__menu_mobile {
+        position: fixed;
+        top: -100%;
+        width: 100%;
+        height: auto;
+        padding: 28px 16px;
+        background-color: white;
+        z-index: 99;
+        transition: all .5s ease;
+    }
+    .navbar__menu_mobile.active {
+        top: 70px;
+        transition: all .5s ease;
+
+    }
+    .navbar__menu_mobile li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .navbar__contact__mobile {
+        width: 100%;
+        margin-top: 24px;
+        padding: 12px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: white;
+        border: 1px solid #00A866;
+        border-radius: 10px;
+    }
     /* Navbar */
-    
-    .tentang_kami,
+
+    /* Hero Mobile */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 620px;
+        border-radius: 0 0 30px 30px;
+        overflow: hidden;
+    }
+    .hero__background {
+        display: none;
+    }
+    .hero__background_mobile {
+        position: absolute;
+        width: 190%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero__container {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        padding: 39px 16px;
+        text-align: center;
+    }
+    .hero__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+    }
+    .hero__title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: white;
+    }
+    .hero__title span {
+        color: #FA8100;
+    }
+    .hero__title br {
+        display: none;
+    }
+    .hero__deskription {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 12.8px */
+        letter-spacing: 0.32px;
+        margin-top: 16px;
+        color: white;
+    }
+    .hero__wrapper_button {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-top: 16px;
+    }
+    .hero__wrapper_button > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        width: 112px;
+        height: 34px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        border-radius: 5px;
+    }
+    .btn__get_started {
+        color: white;
+        background-color: #00D27F;
+    }
+    .btn__consultacion {
+        color: #00D27F;
+        background-color: white;
+    }
+    .btn__consultacion img {
+        width: 14px;
+    }
+    .hero__image {
+        display: none;
+    }
+    .hero__image_mobile {
+        display: block !important;
+        margin-top: 14px;
+    }
+    .hero__our_client {
+        position: absolute;
+        bottom: 28px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 8px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 143.01%; /* 8.581px */
+        color: white;
+        z-index: 98;
+    }
+    .hero__our_client img {
+        width: 90px;
+    }
+    .shadow {
+        position: absolute;
+        display: block !important;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 140px;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7));
+        z-index: 90;
+    }
+    /* Akhir Hero Mobile */
+
+    /* Company Partner */
+    .company_partner {
+        width: 100%;
+        padding: 40px 16px 20px 16px;
+    }
+    .company_partner__container {
+        width: 100%;
+        text-align: center;
+    }
+    .company_partner__left img{
+        width: 96px;
+        height: 27px;
+    }
+    .company_partner__left p {
+        margin-top: 8px;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 11.2px */
+    }
+    .company_partner__right {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 8px;
+    }
+    .company_partner__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        padding: 0 12px;
+        background-color: #F4F5F7;
+        border-radius: 6px;
+    }
+    .company_partner__logo img {
+        width: 100%;
+    }
+    /* Akhir Company Partner */
+
+    /* Tentang Kami */
+    .tentang_kami {
+        position: relative;
+        width: 100%;
+        padding: 40px 16px;
+    }
+    .tentang_kami__gambar {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .tentang_kami img {
+        width: 50%;
+    }
+    .tentang_kami__main {
+        padding: 24px 18px;
+        background-color: rgba(244, 245, 247, 0.62);
+    }
+    .tentang_kami__title1 {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 12.8px */
+    }
+    .tentang_kami__title2 {
+        margin-bottom: 12px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 12px */
+    }
+    .tentang_kami__title2 br {
+        display: block !important;
+    }
+    .tentang_kami__deskription {
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 12.8px */
+    }
+    /* Akhir Tentang Kami */
     .keuntungan,
     .layanan_kami,
     .langkah_pemesanan, 
@@ -94,7 +339,7 @@ button {
 } 
 
 /* Style Laptop */
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
     body {
         background-color: white;
     }
@@ -155,12 +400,16 @@ button {
         border: 1.8px solid var(--primary-500);
         border-radius: 8px;
     }
-    .navbar__menu__mobile {
+    .navbar__menubar,
+    .navbar__menu_mobile {
         display: none;
     }
     /* Akhir Navbar */
 
     /* Hero */
+    .hero__background_mobile {
+        display: none;
+    }
     .hero {
         position: relative;
         max-width: 1440px;

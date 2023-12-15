@@ -39,11 +39,21 @@
                 <li><a href="#">About Us</a></li>
             </ul>
             <button class="navbar__contact">Hubungi Kami</button>
-            <div class="navbar__menu__mobile">
-                menu
+            <div class="navbar__menubar">
+                <img src="./assets/icon/menu.svg" width="24" height="24" alt="menu">
             </div>
         </div>
     </nav>
+    <ul class="navbar__menu_mobile">
+        <li><a href="#">Home</a></li>
+        <li class="navbar__menu_expand_more">
+            <a href="#">Service</a>
+            <img src="./assets/icon/expand_more.svg" alt="expand_more">
+        </li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <button class="navbar__contact__mobile">Hubungi Kami</button>
+    </ul>
     <!-- Akhir Navbar -->
 
     <!-- Hero -->
@@ -53,16 +63,26 @@
             class="hero__background"
             alt=""
         >
+        <img 
+            src="./assets/img/hero-background-mobile.png" 
+            class="hero__background_mobile"
+            alt=""
+        >
         <div class="hero__container">
-            <div>
-                <h1 class="hero__title">Optimalkan<br>pengelolaan keuangan<br>bisnismu bersama <br><span>Mydoit Corporate</span></h1>
-                <p class="hero__deskription">Bergabung bersama kami dan kami siap membantu mengelola keuangan bisnismu dengan baik</p>
-                <div class="hero__wrapper_button">
-                    <button class="btn__get_started">Mulai sekarang</button>
-                    <button class="btn__consultacion">
-                        <img src="./assets/icon/whatsapp.svg" alt="">
-                        Konsultasi
-                    </button>
+            <div class="hero__box">
+                <div>
+                    <h1 class="hero__title">Optimalkan <br>Pengelolaan Keuangan <br>Bisnismu Bersama <br><span>Mydoit Corporate</span></h1>
+                    <p class="hero__deskription">Bergabung bersama kami dan kami siap membantu mengelola keuangan bisnismu dengan baik</p>
+                    <div class="hero__wrapper_button">
+                        <button class="btn__get_started">Mulai sekarang</button>
+                        <button class="btn__consultacion">
+                            <img src="./assets/icon/whatsapp.svg" alt="">
+                            Konsultasi
+                        </button>
+                    </div>
+                </div>
+                <div class="hero__image_mobile" style="display: none;">
+                    <img src="./assets/img/hero-image.png" width="113" style="width: 84%; margin-left: -28px;" alt="hero image">
                 </div>
                 <div class="hero__our_client">
                     <img src="./assets/img/testimonial-client.png" alt="">
@@ -77,6 +97,7 @@
                 >
             </div>
         </div>
+        <div class="shadow" style="display: none;"></div>
     </div>
     <!-- Akhir Hero -->
     
@@ -121,12 +142,12 @@
     <!-- Tentang Kami -->
     <div class="tentang_kami">
         <div class="tentang_kami__container">
-            <div>
+            <div class="tentang_kami__gambar">
                 <img src="./assets/img/tentang-kami.png" alt="gambar">
             </div>
-            <div>
+            <div class="tentang_kami__main">
                 <span class="tentang_kami__title1">Tentang kami</span>
-                <h3 class="tentang_kami__title2">Tim Profesional Finansial Manajemen</h3>
+                <h3 class="tentang_kami__title2">Tim Profesional <br style="display: none;">Finansial Manajemen</h3>
                 <p class="tentang_kami__deskription">Kami berkomitmen untuk memberikan solusi keuangan dan perpajakan terbaik untuk bisnismu. Dengan menyediakan ekosistem yang unggul demi meningkatkan performa bisnis dan keberlanjutan perusahaan secara efektif dan efisien.</p>
             </div>
         </div>
