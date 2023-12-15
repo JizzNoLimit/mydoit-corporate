@@ -54,7 +54,6 @@ button {
 }
 
 /* Style Mobile */
-@media (min-width: 300px) and (max-width: 1023px) {
     body {
         background-color: var(--bg-white);
     }
@@ -336,8 +335,6 @@ button {
         display: none;
     }
     /* Akhir Style Mobile */
-} 
-
 /* Style Laptop */
 @media (min-width: 1024px) {
     body {
