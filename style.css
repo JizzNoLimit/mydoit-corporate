@@ -299,7 +299,7 @@ button {
         width: 60%;
     }
     .tentang_kami__main {
-        padding: 24px 20px;
+        padding: 24px;
         border-radius: 8px;
         background-color: rgba(244, 245, 247, 0.62);
     }
@@ -326,6 +326,7 @@ button {
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
+        color: #252525;
         line-height: 160%; /* 12.8px */
     }
     /* Akhir Tentang Kami */
@@ -337,12 +338,12 @@ button {
     }
     .keuntungan__container {
         width: 100%;
-        padding: 24px 20px;
+        padding: 24px;
         background-color: rgba(244, 245, 247, 0.62);
         border-radius: 8px;
     }
     .keuangan__title {
-        margin-bottom: 24px;
+        margin-bottom: 18px;
         font-size: 26px;
         color: #00A866;
     }
@@ -357,7 +358,7 @@ button {
     .keuntungan__right ul li {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 8px;
         font-size: 12px;
         margin-bottom: 8px;
     }
@@ -365,8 +366,8 @@ button {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 34px;
-        height: 34px;
+        width: 28px;
+        height: 28px;
         background-color: rgba(0, 210, 127, .1);
         border-radius: 50%;
     }
