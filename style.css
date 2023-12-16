@@ -273,9 +273,9 @@ button {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        height: 100%;
         height: 50px;
-        padding: 0 12px;
+        padding: 12px;
         background-color: #F4F5F7;
         border-radius: 6px;
     }
@@ -400,6 +400,54 @@ button {
     }
     /* Akhir Style Mobile */
 }
+
+/* Tablet */
+@media (min-width: 513px) {
+    /* Company Partner */
+    .company_partner__container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        gap: 24px;
+        align-items: center;
+    }
+    .company_partner__left p {
+        text-align: left;
+        font-size: 16px;
+    }
+    .company_partner__left img {
+        display: block;
+        width: 120px;
+        height: 32px;
+    }
+    .company_partner__right {
+        margin-top: 0;
+    }
+    .company_partner__logo {
+        height: 60px;
+        padding: 24px 18%;
+    }
+    .company_partner__logo img {
+        width: 100%;
+    }
+    /* Akhir Company Partner */
+
+    /* Tentang Kami */
+    .tentang_kami__container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        gap: 24px;
+    }
+    .tentang_kami__gambar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tentang_kami__gambar img {
+        width: 90%;
+    }
+    /* Akhir Tentang Kami */
+}
+/* Akhir Tablet */
 
 /* Style Laptop */
 @media (min-width: 1024px) {
