@@ -54,7 +54,7 @@ button {
 }
 
 /* Style Mobile */
-@media (min-width: 300px) and (max-width: 1023px) {
+@media (min-width: 300px) and (max-width: 1024px) {
     body {
         background-color: var(--bg-white);
     }
@@ -252,7 +252,6 @@ button {
         text-align: center;
     }
     .company_partner__left img{
-        display: none;
         width: 96px;
         height: 27px;
     }
@@ -288,7 +287,7 @@ button {
     .tentang_kami {
         position: relative;
         width: 100%;
-        padding: 40px 16px;
+        padding: 40px 16px 20px 16px;
     }
     .tentang_kami__gambar {
         width: 100%;
@@ -334,7 +333,7 @@ button {
     /* Keuntungan */
     .keuntungan {
         width: 100%;
-        padding: 40px 16px;
+        padding: 20px 16px;
     }
     .keuntungan__container {
         width: 100%;
@@ -388,7 +387,124 @@ button {
         background-color: #00D27F;
     }
     /* Akhir Keuntungan */
-    .layanan_kami,
+    .layanan_kami {
+        padding: 40px 16px 20px 16px;
+    }
+    .layanan_kami__container {
+        width: 100%;
+    }
+    .layanan_kami__garis {
+        margin-bottom: -16px;
+        width: 100%;
+        border: 1px solid #00A866;
+    }
+    .layanan_kami__title1 {
+        display: block;
+        margin-bottom: 80px;
+        width: 74%;
+        margin: 0 auto;
+        padding: 0 24px;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+        letter-spacing: 1.28px;
+        background-color: white;
+    }
+    .layanan_kami__main {
+        display: flex;
+        flex-direction: column;
+        gap: 24px !important;
+        margin-top: 34px;
+    }
+    .layanan_kami__card {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 24px 20px;
+        border-radius: 10px;
+        background-color: rgba(244, 245, 247, 0.62);
+    }
+    .layanan_kami__price {
+        display: none;
+    }
+    .layanan_kami__gambar img {
+        width: 100%;
+    }
+    .layanan_kami__judul {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 28.8px */
+        letter-spacing: 0.96px;
+        color: #007E4C;
+    }
+    .layanan_kami__desk {
+        margin-bottom: 16px;
+        text-align: justify;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 22.4px */
+        color: #252525;
+    }
+    .layanan_kami__card__right {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 12px;
+        padding: 24px 20px;
+        border-radius: 10px;
+        background-color: rgba(244, 245, 247, 0.62);
+    }
+    .layanan_kami__list_box {
+        display: flex;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+    .layanan_kami__list li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 22.4px */
+        color: #252525;
+    }
+    .button__layanan_kami {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100% !important;
+        margin-top: 14px !important;
+        padding: 14px;
+        border-radius: 10px;
+        color: white;
+        background-color: #00D27F;
+    }
+    .layanan_kami__price_mobile {
+        padding: 24px 0;
+        display: block !important;
+    }
+    .mulai_dari {
+        font-size: 12px !important;
+    }
+    .rp {
+        margin-left: 8px !important;
+        font-size: 24px !important;
+    }
+    .price {
+        margin-left: 10px;
+        font-size: 20px !important;
+    }
+    /* Layanan Kami */
+
+    /* Akhir Layanan Kami */
     .langkah_pemesanan, 
     .banner_mydoit_mobile,
     .pengguna__mydoit,
@@ -402,8 +518,11 @@ button {
 }
 
 /* Tablet */
-@media (min-width: 513px) {
+@media (min-width: 513px) and (max-width: 1024px) {
     /* Company Partner */
+    .company_partner {
+        padding: 20px 0;
+    }
     .company_partner__container {
         display: grid;
         grid-template-columns: 30% auto;
@@ -651,9 +770,10 @@ button {
         padding: 84px 0;
     }
     .tentang_kami__container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 438px auto;
         align-items: center;
-        gap: 102px;
+        gap: 51px;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;

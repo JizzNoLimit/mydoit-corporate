@@ -221,7 +221,7 @@
         <div class="layanan_kami__container">
             <hr class="layanan_kami__garis">
             <h3 class="layanan_kami__title1">Kenali <span>Layanan Kami</span></h3>
-            <div style="display: flex; flex-direction: column; gap: 80px; width: 100%;">
+            <div class="layanan_kami__main" style="display: flex; flex-direction: column; gap: 80px; width: 100%;">
                 <!-- Akuntansi -->
                 <div class="layanan_kami__card">
                     <div>
@@ -248,7 +248,7 @@
                         <h1 class="layanan_kami__judul">Akuntansi</h1>
                         <p class="layanan_kami__desk">Navigasi kompleksitas pelaporan keuangan dengan keyakinan. Tim ahli kami memastikan laporan keuangan yang akurat,
                         sistematis yang dilengkapi dengan analisis bisnis untuk mendukung proses pengambilan keputusan.</p>
-                        <div style="display: flex; gap: 18px;">
+                        <div class="layanan_kami__list_box" style="display: flex; gap: 18px;">
                             <ul class="layanan_kami__list" style="flex: 1;">
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Rekonsiliasi kas dan bank</li>
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Account payable</li>
@@ -261,7 +261,16 @@
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
                             </ul>
                         </div>
-                        <button class="button__arrow_forward_green"
+                        <div class="layanan_kami__price_mobile" style="display: none;">
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px;">
+                                <span class="mulai_dari" style="font-size: 14px; color: #737373;">Mulai dari</span>
+                                
+                                <span class="price" style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    Rp. 1.000.000,-
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button__layanan_kami"
                             style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
                             Pelajari Selengkapnya
                             <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
@@ -277,7 +286,7 @@
                         <p class="layanan_kami__desk">Pelaporan pajak tepat waktu. Tim spesialis kami menghitung, menyiapkan, dan melaporkan
                         pajakmu dengan tepat, memastikan
                         compliance dan mengoptimalkan posisi pajakmu.</p>
-                        <div style="display: flex; gap: 18px;">
+                        <div class="layanan_kami__list_box" style="display: flex; gap: 18px;">
                             <ul class="layanan_kami__list" style="flex: 1;">
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> SPT PPN</li>
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh pasal 4 ayat 2</li>
@@ -288,7 +297,16 @@
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> PPh (21,23,25,26,29)</li>
                             </ul>
                         </div>
-                        <button class="button__arrow_forward_green"
+                        <div class="layanan_kami__price_mobile" style="display: none;">
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px;">
+                                <span class="mulai_dari" style="font-size: 14px; color: #737373;">Mulai dari</span>
+                        
+                                <span class="price" style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    Rp. 1.000.000,-
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button__layanan_kami"
                             style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
                             Pelajari Selengkapnya
                             <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
@@ -337,7 +355,7 @@
                         <p class="layanan_kami__desk">Analisis Bisnis untuk pengambilan keputusan dengan analisis medalam. Para ahli kami menggali data keuanganmu, memberikan
                         wawasan yang dapat diambil tindakan untuk mendorong pertumbuhan, meningkatkan efisiensi, dan memaksimalkan
                         profitabilitas.</p>
-                        <div style="display: flex; gap: 18px;">
+                        <div class="layanan_kami__list_box" style="display: flex; gap: 18px;">
                             <ul class="layanan_kami__list" style="flex: 1;">
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan anggaran</li>
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Finansial modeling</li>
@@ -350,7 +368,16 @@
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Forecasting kas/biaya/pendapatan</li>
                             </ul>
                         </div>
-                        <button class="button__arrow_forward_green"
+                        <div class="layanan_kami__price_mobile" style="display: none;">
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px;">
+                                <span class="mulai_dari" style="font-size: 14px; color: #737373;">Mulai dari</span>
+                        
+                                <span class="price" style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    Rp. 1.000.000,-
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button__layanan_kami"
                             style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
                             Pelajari Selengkapnya
                             <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
@@ -361,11 +388,11 @@
 
                 <!-- Pelatihan sistem akuntansi -->
                 <div class="layanan_kami__card__right">
-                    <div>
+                    <div style="width: 100%;">
                         <h1 class="layanan_kami__judul">Pelatihan sistem akuntansi</h1>
                         <p class="layanan_kami__desk">Pelatihan sistem akuntansi untuk mewujudkan digitalisasi dalam lingkup bisnis serta memudahkan monitoring data
                         keuangan. Tingkatkan kualitas SDM dan pengelolaan data keuangan melalui pelatihan sistem akuntansi.</p>
-                        <div style="display: flex; gap: 18px;">
+                        <div class="layanan_kami__list_box" style="display: flex; gap: 18px;">
                             <ul class="layanan_kami__list" style="flex: 1;">
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsep</li>
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Konsultasi</li>
@@ -378,7 +405,16 @@
                                 <li><img src="./assets/icon/check_circle.svg" alt="icon"> Penyusunan laporan keuangan</li>
                             </ul>
                         </div>
-                        <button class="button__arrow_forward_green"
+                        <div class="layanan_kami__price_mobile" style="display: none;">
+                            <div style="text-align: center; padding: 13px 24px 23px 24px; background-color: white; border-radius: 15px;">
+                                <span class="mulai_dari" style="font-size: 14px; color: #737373;">Mulai dari</span>
+                        
+                                <span class="price" style="font-size: 36px; font-weight: 700; color: #FA8100;">
+                                    Rp. 1.000.000,-
+                                </span>
+                            </div>
+                        </div>
+                        <button class="button__layanan_kami"
                             style="width: 260px; margin-top: 30px; padding: 14px 0; font-size: 14px; letter-spacing: 0.64px;">
                             Pelajari Selengkapnya
                             <img src="./assets/icon/arrow_forward_ios.svg" width="16px" height="16px" alt="icon">
