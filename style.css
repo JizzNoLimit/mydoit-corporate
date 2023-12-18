@@ -707,6 +707,7 @@ button {
         width: 100%;
     }
     .cta_home__content > img {
+        display: none;
         width: 120px;
         height: 40px;
         margin-bottom: 16px;
@@ -830,12 +831,204 @@ button {
         text-decoration-line: underline;
         color: #00D27F;
     }
-    /* Akhir Artikerl */
-    .qna,
-    .footer {
-        display: none;
+    /* qna */
+    .qna {
+        width: 100%;
+        padding: 24px 16px;
     }
+    .qna__container {
+        width: 100%;
+    }
+    .qna h1 {
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 64px */
+        letter-spacing: 1.6px;
+        color: #252525;
+    }
+    .qna p {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 22.4px */
+        letter-spacing: 0.56px;
+        color: #606060;
+    }
+    .qna__box {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 24px;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 25.6px */
+    letter-spacing: 0.64px;
+    border-radius: 10px;
+    color: #252525;
+    background-color: white;
+    border: 1px solid #D9D9D9;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    margin-top: 12px;
+    text-align: left;
+    padding: 20px 40px;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+    /* Akhir qna */
+
+    /* Akhir Artikerl */
     /* Akhir Style Mobile */
+
+    /* Footer */
+    .footer {
+        width: 100%;
+        height: 100%;
+        padding: 24px 16px;
+        color: white;
+        background-color: #007E4C;
+    }
+    .footer hr {
+        height: 0.5px;
+    }
+    .footer__container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .footer__newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 60px;
+    }
+    .footer__newsletter h3 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    .footer__newsletter p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+    }
+    .footer__form {
+        display: flex;
+        gap: 12px;
+        padding: 6px 6px 6px 20px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .footer__form img {
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .footer__newsletter_input {
+        position: relative;
+        flex: 70%;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 0;
+        border: none;
+        color: #252525;
+    }
+    .footer__newsletter_input::placeholder {
+        color: #B7B6B6;
+    }
+    .footer__newsletter_input:focus {
+        outline: none;
+    }
+    .footer__newsletter_submit {
+        flex: 30%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 8px;
+        color: white;
+        background-color: #00D27F;
+    }
+    .footer__main {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 40px;
+    }
+    .footer__logo {
+        width: 160px;
+        height: 54px;
+    }
+    .footer__main p {
+        margin-top: 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+        letter-spacing: 0.64px;
+        text-transform: capitalize;
+    }
+    .footer__main h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    .footer__main ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 20px;
+    }
+    .footer__main ul li {
+        display: flex;
+        align-items: start;
+        gap: 12px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .footer__social_media {
+        display: flex;
+        gap: 12px;
+        margin-top: 40px;
+    }
+    .footer__copyright {
+        margin-top: 70px;
+        text-align: center;
+        /* font-family: Poppins; */
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 18px */
+    }
+    .footer__copyright a {
+        color: white;
+    }
+    /* Akhir Footer */
 }
 
 /* Tablet */
