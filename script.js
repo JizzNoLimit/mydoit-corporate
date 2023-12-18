@@ -1,8 +1,16 @@
 const swiper_client = new Swiper('.swiper_pengguna', {
-    slidesPerView: 3,
     loop: true,
-    spaceBetween: 100,
     centeredSlides: true,
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+        },
+        700: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+        }
+    },
     autoplay: {
         delay: 5000,
     },
