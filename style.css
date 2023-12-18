@@ -691,9 +691,45 @@ button {
         border-radius: 12px;
     }
 
-    /* Pengguna MyDoit */
-    /* Akhir Pengguna MyDoit */
-    .cta_home,
+    /* CTA */
+    .cta_home {
+        width: 100%;
+        height: auto;
+        padding: 24px 16px;
+    }
+    .cta_home__container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+    }
+    .gambar_cta {
+        width: 100%;
+    }
+    .cta_home__content > img {
+        width: 120px;
+        height: 40px;
+        margin-bottom: 16px;
+    }
+    .cta_home__content h3 {
+        margin-bottom: 14px;
+        font-size: 24px;
+    }
+    .cta_home__content > button {
+        margin-top: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        padding: 12px 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: #00D27F;
+        border-radius: 10px;
+    }
+    /* Akhir CTA */
     .baca_artikel,
     .qna,
     .footer {
@@ -750,6 +786,9 @@ button {
         width: 90%;
     }
     /* Akhir Tentang Kami */
+    .banner_mydoit_mobile {
+        display: none;
+    }
 }
 /* Akhir Tablet */
 
